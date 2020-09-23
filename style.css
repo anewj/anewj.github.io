@@ -135,6 +135,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 .voffset{
 	margin-top:30px;
 }
+.voffset-lg{
+	margin-top:80px;
+}
 
 
 /* = NavBar
@@ -380,10 +383,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .text-span-color{
 	color:#455575;
-}
-.divider-tech-stack-padding{
-	padding-top:30px;
-	padding-bottom:30px;
 }
 .img-products-style{
 	height:300px;
