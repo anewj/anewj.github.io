@@ -43,6 +43,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 /* Sizes */
 
+.bloc-lg{
+	padding:100px 50px;
+}
 .bloc-sm{
 	padding:20px 50px;
 }
@@ -78,6 +81,19 @@ a:hover{text-decoration: none; cursor:pointer;}
 	align-self: flex-end;
 }
 
+
+/* Background Effects */
+
+.b-parallax{
+	background-attachment:fixed;
+}
+
+/* Disable Parallax on Mobile Touch Devices */
+@media (hover: none) {
+	.b-parallax{
+	background-attachment:scroll;
+}
+}
 
 /* Dark theme */
 
@@ -163,9 +179,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 .voffset{
 	margin-top:30px;
 }
-.voffset-lg{
-	margin-top:80px;
-}
 
 
 /* = NavBar
@@ -203,6 +216,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
+.mg-clear{
+	margin:0;
+}
 .mg-sm{
 	margin-top:10px;
 	margin-bottom:5px;
@@ -210,10 +226,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
-}
-.mg-lg{
-	margin-top:10px;
-	margin-bottom:40px;
 }
 img.mg-sm,img.mg-md,img.mg-lg{
 	margin-top: 0;
@@ -241,6 +253,14 @@ button{
 	outline: none!important;
 }
 
+.btn-wire{
+	background:transparent!important;
+	border:2px solid transparent;
+}
+.btn-wire:hover{
+	background:transparent!important;
+	border:2px solid transparent;
+}
 
 /* = Icons
 -------------------------------------------------------------- */
@@ -311,6 +331,11 @@ button{
 .showScrollTop{
 	font-size: 14px;
 	opacity: 1;
+}
+
+/* Hide Object */
+.object-hidden{
+	display:none;
 }
 
 /* = Custom Styling
@@ -427,8 +452,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 /* Background colour styles */
 
-.bgc-charcoal{
-	background-color:#344258;
+.bgc-dark-jungle-green{
+	background-color:#1C1F34;
 }
 .bgc-alice-blue{
 	background-color:#EBF2FA;
@@ -439,28 +464,27 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 /* Text colour styles */
 
-.tc-alice-blue{
-	color:#EBF2FA!important;
+.tc-camel{
+	color:#BB9A6A!important;
 }
 .tc-charcoal{
 	color:#2A444D!important;
 }
-.tc-black{
-	color:#000000!important;
+.tc-prussian-blue{
+	color:#182B55!important;
 }
-.tc-ghost-white{
-	color:#F9F9F9!important;
+.tc-dark-jungle-green{
+	color:#1C1F34!important;
+}
+.tc-deep-carrot-orange{
+	color:#EC6624!important;
 }
 
 /* Button colour styles */
 
-.btn-tiffany-blue{
-	background:#00D0B2;
-	color:#FFFFFF!important;
-}
-.btn-tiffany-blue:hover{
-	background:#00a68e!important;
-	color:#FFFFFF!important;
+.wire-btn-deep-carrot-orange{
+	color:#EC6624!important;
+	border-color:#EC6624!important;
 }
 
 /* Link colour styles */
@@ -497,18 +521,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 /* = Custom Bric Data
 -------------------------------------------------------------- */
 
-.waves-container {
-	max-width: 100%;
-	overflow: hidden;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 99999;
-}
-.waves-container canvas {
-	display: block;
-}
 .page-scroll-progress-bar{
 		top:0;
 		left:0;
@@ -529,6 +541,20 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	right:0;
 	top:0;
 	bottom: 0;
+}
+.img-text-overlay-container{
+	position:relative;
+}
+.text-label-overlay{
+	position:absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width:100%;
+	 text-align:center;
+	font-size:40px;
+}
+.text-overlay-light-text{
+	color:rgba(255,255,255,.5);
 }
 
 
